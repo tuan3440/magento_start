@@ -1,0 +1,9 @@
+<label><?= __("Data retrieved from Block is ") ?></label>
+<?php
+  $block->getCatalogSession()->setMyName('Tuandz');
+  echo '<h1>'.$block->getCatalogSession()->getMyName().'</h1>';
+  $block->getRegistry()->register('a','tuandz');
+echo '<h1>'.$block->getRegistry()->registry('a').'</h1>';
+?>
+
+
